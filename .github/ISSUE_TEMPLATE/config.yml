@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Claude HUD 上游项目
+    url: https://github.com/jarrodwatts/claude-hud
+    about: 上游 Claude HUD 仓库（仅 fork 与 CC Switch 集成相关）
+

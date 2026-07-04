@@ -1,0 +1,40 @@
+{
+  "name": "claude-hud-ccswitch",
+  "version": "0.2.0",
+  "description": "Claude HUD fork for CC Switch users - displays the real upstream model name after proxy routing",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist/",
+    "src/",
+    "commands/",
+    "wrapper/",
+    ".claude-plugin/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "npm run build && node --test",
+    "test:coverage": "npm run build && c8 --reporter=text --reporter=lcov node --test",
+    "test:update-snapshots": "UPDATE_SNAPSHOTS=1 npm test",
+    "test:stdin": "npm run build && echo '{\"model\":{\"display_name\":\"Opus\"},\"context_window\":{\"current_usage\":{\"input_tokens\":45000},\"context_window_size\":200000},\"transcript_path\":\"/tmp/test.jsonl\"}' | node dist/index.js"
+  },
+  "keywords": [
+    "claude-code",
+    "statusline",
+    "hud",
+    "cc-switch",
+    "proxy",
+    "model-display"
+  ],
+  "author": "Jarrod Watts / Mick4994 fork",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "c8": "^11.0.0",
+    "typescript": "^6.0.3"
+  }
+}

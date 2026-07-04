@@ -1,0 +1,14 @@
+{
+  "name": "claude-hud-ccswitch",
+  "description": "Claude HUD fork for CC Switch users - displays the real upstream model after proxy routing (glm-5.2, kimi-k2.7, deepseek-v4, etc.)",
+  "version": "0.2.0",
+  "author": {
+    "name": "Mick4994 fork of Jarrod Watts"
+  },
+  "commands": [
+    "./commands/setup.md",
+    "./commands/configure.md"
+  ],
+  "license": "MIT",
+  "keywords": ["hud", "monitoring", "statusline", "cc-switch", "proxy", "model-display", "claude-code"]
+}
